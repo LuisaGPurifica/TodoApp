@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: learn.programming.service.TodoServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.498 s <<< FAILURE! - in learn.programming.service.TodoServiceTest
-learn.programming.service.TodoServiceTest  Time elapsed: 9.495 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 19.841 s <<< FAILURE! - in learn.programming.service.TodoServiceTest
+learn.programming.service.TodoServiceTest  Time elapsed: 19.838 s  <<< ERROR!
 org.jboss.arquillian.container.spi.client.container.LifecycleException: Could not start GlassFish Embedded
 Caused by: java.lang.RuntimeException: org.glassfish.embeddable.GlassFishException: Server failed to start
 Caused by: org.glassfish.embeddable.GlassFishException: Server failed to start

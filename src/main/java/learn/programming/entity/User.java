@@ -19,7 +19,6 @@ import javax.validation.constraints.Size;
 	@NamedQuery(name = User.FIND_USER_BY_EMAIL, query = "select u from User u where u.email = :email"),
 	@NamedQuery(name = User.FIND_USER_BY_PASSWORD, query = "select u from User u where u.password = :password")
 })
-
 public class User extends AbstractEntity {
 	
 	public static final String FIND_ALL_USERS = "User.findAllUsers";
@@ -38,13 +37,24 @@ public class User extends AbstractEntity {
 	@Size(min = 8, message = "Password must have a minimum size of 8 characters")
 //	@Pattern(regexp = "", message = "Password must be a combination of alphabets, numbers and special characters")
 	private String password;
+	
+	private String salt;
 
 	@OneToMany
 	private final Collection<Todo> todos = new ArrayList<Todo>();
 	
+	public String getSalt() {
+		return salt;
+	}
+	
+	public void setSalt(String salt) {
+		this.salt = salt;
+	}
+	
 	public String getFullName() {
 		return fullName;
 	}
+
 
 	public void setFullName(String fullName) {
 		this.fullName = fullName;
