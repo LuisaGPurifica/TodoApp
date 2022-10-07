@@ -2,21 +2,20 @@ package learn.programming.service;
 
 import java.util.List;
 
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.transaction.Transactional;
 
 import learn.programming.entity.Todo;
 
 
-@Transactional
+@Stateless
 public class TodoService {
 	
 	@PersistenceContext
 	EntityManager entityManager;
 	
 	public Todo createTodo(Todo todo) {
-		entityManager.persist(todo);
 		return todo;
 	}
 	

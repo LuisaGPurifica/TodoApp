@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -13,10 +14,17 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "TodoUser")
-@NamedQuery(name = User.FIND_ALL_USERS, query = "select u from")
+@NamedQueries({
+	@NamedQuery(name = User.FIND_ALL_USERS, query = "select u from User u order by u.fullName"),
+	@NamedQuery(name = User.FIND_USER_BY_EMAIL, query = "select u from User u where u.email = :email"),
+	@NamedQuery(name = User.FIND_USER_BY_PASSWORD, query = "select u from User u where u.password = :password")
+})
+
 public class User extends AbstractEntity {
 	
-	public static final String FIND_ALL_USERS = "User.findAllUsers"; 
+	public static final String FIND_ALL_USERS = "User.findAllUsers";
+	public static final String FIND_USER_BY_EMAIL = "User.findByEmail";
+	public static final String FIND_USER_BY_PASSWORD = "User.findByPasswords";
 	
 	@NotNull(message = "Full name must be set")
 //	@Pattern(regexp = "", message="Full name must be in alphabets")
