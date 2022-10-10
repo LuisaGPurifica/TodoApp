@@ -5,6 +5,8 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.SecurityContext;
 
 import learn.programming.entity.Todo;
 import learn.programming.entity.User;
@@ -16,7 +18,10 @@ public class QueryService {
 	EntityManager entityManager;
 
 	@Inject
-	SecurityUtil securityUtil;
+	private SecurityUtil securityUtil;
+
+	@Context
+	private SecurityContext securityContext;
 
 	public User findUserByEmail(String email) {
 		List<User> userList = entityManager.createNamedQuery(User.FIND_USER_BY_EMAIL, User.class)
@@ -46,9 +51,9 @@ public class QueryService {
 //		return securityUtil.passwordsMatch(user.getPassword(), user.getSalt(), password);
 //	}
 
-	public Todo findTodoById(Long id, String email) {
+	public Todo findTodoById(Long id) {
 		List<Todo> resultList = entityManager.createNamedQuery(Todo.FIND_TODO_BY_ID, Todo.class).setParameter("id", id)
-				.setParameter("email", email).getResultList();
+				.setParameter("email", securityContext.getUserPrincipal().getName()).getResultList();
 
 		if (!resultList.isEmpty()) {
 			return resultList.get(0);
@@ -57,13 +62,13 @@ public class QueryService {
 		return null;
 	}
 
-	public List<Todo> getAllTodos(String email) {
-		return entityManager.createNamedQuery(Todo.FIND_ALL_TODOS_BY_USER, Todo.class).setParameter("email", email)
+	public List<Todo> getAllTodos() {
+		return entityManager.createNamedQuery(Todo.FIND_ALL_TODOS_BY_USER, Todo.class).setParameter("email", securityContext.getUserPrincipal().getName())
 				.getResultList();
 	}
 
-	public List<Todo> getAllTodosByTask(String taskText, String email) {
-		return entityManager.createNamedQuery(Todo.FIND_TODO_BY_TASK, Todo.class).setParameter("email", email)
+	public List<Todo> getAllTodosByTask(String taskText) {
+		return entityManager.createNamedQuery(Todo.FIND_TODO_BY_TASK, Todo.class).setParameter("email", securityContext.getUserPrincipal().getName())
 				.setParameter("task", "%" + taskText + "%").getResultList();
 	}
 

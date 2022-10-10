@@ -15,15 +15,20 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import learn.programming.entity.Todo;
+import learn.programming.service.QueryService;
 import learn.programming.service.TodoService;
 
 @Path("todo")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
+@Authz
 public class TodoRest {
 
 	@Inject
 	TodoService todoService;
+	
+	@Inject
+	QueryService queryService;
 
 	@Path("new")
 	@POST
@@ -43,13 +48,13 @@ public class TodoRest {
 	@Path("{id}")
 	@GET
 	public Todo getTodo(@PathParam("id") Long id) {
-		return todoService.findById(id);
+		return queryService.findTodoById(id);
 	}
 	
 	@Path("list")
 	@GET
 	public List<Todo> getTodos() {
-		return todoService.getTodos();
+		return queryService.getAllTodos();
 	}
 	
 	@Path("status")

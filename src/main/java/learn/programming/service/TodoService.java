@@ -63,11 +63,11 @@ public class TodoService {
 	}
 
 	public Todo findById(Long id) {
-		return entityManager.find(Todo.class, id);
+		return queryService.findTodoById(id);
 	}
 
 	public List<Todo> getTodos() {
-		return entityManager.createQuery("select t from todo t", Todo.class).getResultList();
+		return queryService.getAllTodos();
 	}
 
 }
