@@ -5,7 +5,6 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 
 import learn.programming.entity.Todo;
 import learn.programming.entity.User;
@@ -14,12 +13,20 @@ import learn.programming.entity.User;
 public class QueryService {
 
 	@Inject
-	@PersistenceContext
 	EntityManager entityManager;
 
+	@Inject
+	SecurityUtil securityUtil;
+
 	public User findUserByEmail(String email) {
-		return entityManager.createNamedQuery(User.FIND_USER_BY_EMAIL, User.class).setParameter("email", email)
-				.getResultList().get(0);
+		List<User> userList = entityManager.createNamedQuery(User.FIND_USER_BY_EMAIL, User.class)
+				.setParameter("email", email).getResultList();
+
+		if (!userList.isEmpty())
+			return userList.get(0);
+
+		return null;
+
 	}
 
 	public List countUserByEmail(String email) {
@@ -29,9 +36,15 @@ public class QueryService {
 				.setParameter(1, email).getResultList();
 	}
 
-	public boolean authenticateUser(String email, String password) {
-		return false;
-	}
+//	public boolean authenticateUser(String email, String password) {
+//
+//		User user = findUserByEmail(email);
+//
+//		if (user == null)
+//			return false;
+//
+//		return securityUtil.passwordsMatch(user.getPassword(), user.getSalt(), password);
+//	}
 
 	public Todo findTodoById(Long id, String email) {
 		List<Todo> resultList = entityManager.createNamedQuery(Todo.FIND_TODO_BY_ID, Todo.class).setParameter("id", id)
@@ -50,8 +63,7 @@ public class QueryService {
 	}
 
 	public List<Todo> getAllTodosByTask(String taskText, String email) {
-		return entityManager.createNamedQuery(Todo.FIND_TODO_BY_TASK, Todo.class)
-				.setParameter("email", email)
+		return entityManager.createNamedQuery(Todo.FIND_TODO_BY_TASK, Todo.class).setParameter("email", email)
 				.setParameter("task", "%" + taskText + "%").getResultList();
 	}
 
