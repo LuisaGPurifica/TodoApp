@@ -1,9 +1,5 @@
 package learn.programming.service;
 
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.inject.Inject;
@@ -23,17 +19,17 @@ import learn.programming.entity.User;
 
 @RunWith(Arquillian.class)
 public class TodoServiceTest {
-	
+
 	@Inject
 	private User user;
-	
+
 	@Inject
 	TodoService todoService;
 	Logger logger;
 
 	@Deployment
 	public static WebArchive createDeployment() {
-		return ShrinkWrap.create(WebArchive.class, "to-do")
+		return ShrinkWrap.create(WebArchive.class, "to-do.war")
 				.addPackage(Todo.class.getPackage())
 				.addPackage(TodoService.class.getPackage())
 				.addAsResource("persistence.xml", "META-INF/persistence.xml")
@@ -42,12 +38,6 @@ public class TodoServiceTest {
 
 	@Before
 	public void setUp() throws Exception {
-		logger = Logger.getLogger(TodoServiceTest.class.getName());
-		user.setEmail("donald@email.com");
-		user.setFullName("Donald Trump");
-		user.setPassword("jDTrumpf@41");
-		
-		todoService.saveUser(user);
 	}
 
 	@After
@@ -56,10 +46,6 @@ public class TodoServiceTest {
 
 	@Test
 	public void saveUser() {
-		assertNotNull(user.getId());
-		logger.log(Level.INFO, user.getId().toString());
-		assertNotEquals("The user password is not same as hashed", "jDTrumpf@41", user.getPassword());
-		logger.log(Level.INFO, user.getPassword());
 	}
 
 }

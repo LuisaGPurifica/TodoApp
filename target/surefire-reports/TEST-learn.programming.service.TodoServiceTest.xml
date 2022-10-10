@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="learn.programming.service.TodoServiceTest" time="19.841" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="learn.programming.service.TodoServiceTest" time="18.454" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\018039631\Desktop\Projetos Java\Estudos\Java EE\to-do\target\test-classes;C:\Users\018039631\Desktop\Projetos Java\Estudos\Java EE\to-do\target\classes;C:\Users\018039631\.m2\repository\org\eclipse\persistence\eclipselink\2.5.0\eclipselink-2.5.0.jar;C:\Users\018039631\.m2\repository\org\eclipse\persistence\javax.persistence\2.1.0\javax.persistence-2.1.0.jar;C:\Users\018039631\.m2\repository\org\eclipse\persistence\commonj.sdo\2.1.1\commonj.sdo-2.1.1.jar;C:\Users\018039631\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar;C:\Users\018039631\.m2\repository\javax\javaee-api\8.0\javaee-api-8.0.jar;C:\Users\018039631\.m2\repository\com\sun\mail\javax.mail\1.6.0\javax.mail-1.6.0.jar;C:\Users\018039631\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-core\1.4.0\shiro-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-lang\1.4.0\shiro-lang-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-cache\1.4.0\shiro-cache-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-hash\1.4.0\shiro-crypto-hash-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-core\1.4.0\shiro-crypto-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-cipher\1.4.0\shiro-crypto-cipher-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-config-core\1.4.0\shiro-config-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-config-ogdl\1.4.0\shiro-config-ogdl-1.4.0.jar;C:\Users\018039631\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\018039631\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-event\1.4.0\shiro-event-1.4.0.jar;C:\Users\018039631\.m2\repository\org\slf4j\slf4j-simple\1.8.0-beta2\slf4j-simple-1.8.0-beta2.jar;C:\Users\018039631\.m2\repository\org\slf4j\slf4j-api\1.8.0-beta2\slf4j-api-1.8.0-beta2.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\junit\arquillian-junit-container\1.4.0.Final\arquillian-junit-container-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\junit\arquillian-junit-core\1.4.0.Final\arquillian-junit-core-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-api\1.4.0.Final\arquillian-test-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-api\1.4.0.Final\arquillian-core-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-spi\1.4.0.Final\arquillian-test-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-spi\1.4.0.Final\arquillian-core-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-api\1.4.0.Final\arquillian-container-test-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-api\1.2.6\shrinkwrap-api-1.2.6.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\descriptors\shrinkwrap-descriptors-api-base\2.0.0\shrinkwrap-descriptors-api-base-2.0.0.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-spi\1.4.0.Final\arquillian-container-test-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-impl-base\1.4.0.Final\arquillian-core-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-impl-base\1.4.0.Final\arquillian-test-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-impl-base\1.4.0.Final\arquillian-container-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-api\1.4.0.Final\arquillian-config-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-impl-base\1.4.0.Final\arquillian-config-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-spi\1.4.0.Final\arquillian-config-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\descriptors\shrinkwrap-descriptors-spi\2.0.0\shrinkwrap-descriptors-spi-2.0.0.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-impl-base\1.4.0.Final\arquillian-container-test-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-impl-base\1.2.6\shrinkwrap-impl-base-1.2.6.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-spi\1.2.6\shrinkwrap-spi-1.2.6.jar;C:\Users\018039631\.m2\repository\fish\payara\arquillian\arquillian-payara-server-4-embedded\1.0.Beta3\arquillian-payara-server-4-embedded-1.0.Beta3.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-spi\1.4.0.Final\arquillian-container-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\protocol\arquillian-protocol-servlet\1.4.0.Final\arquillian-protocol-servlet-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-cdi\1.4.0.Final\arquillian-testenricher-cdi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-ejb\1.4.0.Final\arquillian-testenricher-ejb-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-resource\1.4.0.Final\arquillian-testenricher-resource-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-initialcontext\1.4.0.Final\arquillian-testenricher-initialcontext-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\fish\payara\extras\payara-embedded-all\5.182\payara-embedded-all-5.182.jar;C:\Users\018039631\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\018039631\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\018039631\Desktop\Projetos Java\Estudos\Java EE\to-do\target\test-classes;C:\Users\018039631\Desktop\Projetos Java\Estudos\Java EE\to-do\target\classes;C:\Users\018039631\.m2\repository\org\eclipse\persistence\eclipselink\2.5.0\eclipselink-2.5.0.jar;C:\Users\018039631\.m2\repository\org\eclipse\persistence\javax.persistence\2.1.0\javax.persistence-2.1.0.jar;C:\Users\018039631\.m2\repository\org\eclipse\persistence\commonj.sdo\2.1.1\commonj.sdo-2.1.1.jar;C:\Users\018039631\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar;C:\Users\018039631\.m2\repository\javax\javaee-api\8.0\javaee-api-8.0.jar;C:\Users\018039631\.m2\repository\com\sun\mail\javax.mail\1.6.0\javax.mail-1.6.0.jar;C:\Users\018039631\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-core\1.4.0\shiro-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-lang\1.4.0\shiro-lang-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-cache\1.4.0\shiro-cache-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-hash\1.4.0\shiro-crypto-hash-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-core\1.4.0\shiro-crypto-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-cipher\1.4.0\shiro-crypto-cipher-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-config-core\1.4.0\shiro-config-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-config-ogdl\1.4.0\shiro-config-ogdl-1.4.0.jar;C:\Users\018039631\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\018039631\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-event\1.4.0\shiro-event-1.4.0.jar;C:\Users\018039631\.m2\repository\org\slf4j\slf4j-simple\1.8.0-beta2\slf4j-simple-1.8.0-beta2.jar;C:\Users\018039631\.m2\repository\org\slf4j\slf4j-api\1.8.0-beta2\slf4j-api-1.8.0-beta2.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\junit\arquillian-junit-container\1.4.0.Final\arquillian-junit-container-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\junit\arquillian-junit-core\1.4.0.Final\arquillian-junit-core-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-api\1.4.0.Final\arquillian-test-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-api\1.4.0.Final\arquillian-core-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-spi\1.4.0.Final\arquillian-test-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-spi\1.4.0.Final\arquillian-core-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-api\1.4.0.Final\arquillian-container-test-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-api\1.2.6\shrinkwrap-api-1.2.6.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\descriptors\shrinkwrap-descriptors-api-base\2.0.0\shrinkwrap-descriptors-api-base-2.0.0.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-spi\1.4.0.Final\arquillian-container-test-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-impl-base\1.4.0.Final\arquillian-core-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-impl-base\1.4.0.Final\arquillian-test-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-impl-base\1.4.0.Final\arquillian-container-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-api\1.4.0.Final\arquillian-config-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-impl-base\1.4.0.Final\arquillian-config-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-spi\1.4.0.Final\arquillian-config-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\descriptors\shrinkwrap-descriptors-spi\2.0.0\shrinkwrap-descriptors-spi-2.0.0.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-impl-base\1.4.0.Final\arquillian-container-test-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-impl-base\1.2.6\shrinkwrap-impl-base-1.2.6.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-spi\1.2.6\shrinkwrap-spi-1.2.6.jar;C:\Users\018039631\.m2\repository\fish\payara\arquillian\arquillian-payara-server-4-embedded\1.0.Beta3\arquillian-payara-server-4-embedded-1.0.Beta3.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-spi\1.4.0.Final\arquillian-container-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\protocol\arquillian-protocol-servlet\1.4.0.Final\arquillian-protocol-servlet-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-cdi\1.4.0.Final\arquillian-testenricher-cdi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-ejb\1.4.0.Final\arquillian-testenricher-ejb-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-resource\1.4.0.Final\arquillian-testenricher-resource-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-initialcontext\1.4.0.Final\arquillian-testenricher-initialcontext-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\fish\payara\extras\payara-embedded-all\5.182\payara-embedded-all-5.182.jar;C:\Users\018039631\.m2\repository\io\jsonwebtoken\jjwt\0.9.0\jjwt-0.9.0.jar;C:\Users\018039631\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.9\jackson-databind-2.8.9.jar;C:\Users\018039631\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.8.0\jackson-annotations-2.8.0.jar;C:\Users\018039631\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.8.9\jackson-core-2.8.9.jar;C:\Users\018039631\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\018039631\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\018039~1\AppData\Local\Temp\surefire1308351117702236676\surefirebooter5289747211916340274.jar C:\Users\018039631\AppData\Local\Temp\surefire1308351117702236676 2022-10-07T10-55-11_661-jvmRun1 surefire7502222504996936224tmp surefire_04661053025954309779tmp"/>
+    <property name="sun.java.command" value="C:\Users\018039~1\AppData\Local\Temp\surefire11038778280979708308\surefirebooter11011492107311160901.jar C:\Users\018039631\AppData\Local\Temp\surefire11038778280979708308 2022-10-10T11-53-54_567-jvmRun1 surefire4481820811628886256tmp surefire_05422444512014072125tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\018039631\Desktop\Projetos Java\Estudos\Java EE\to-do\target\test-classes;C:\Users\018039631\Desktop\Projetos Java\Estudos\Java EE\to-do\target\classes;C:\Users\018039631\.m2\repository\org\eclipse\persistence\eclipselink\2.5.0\eclipselink-2.5.0.jar;C:\Users\018039631\.m2\repository\org\eclipse\persistence\javax.persistence\2.1.0\javax.persistence-2.1.0.jar;C:\Users\018039631\.m2\repository\org\eclipse\persistence\commonj.sdo\2.1.1\commonj.sdo-2.1.1.jar;C:\Users\018039631\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar;C:\Users\018039631\.m2\repository\javax\javaee-api\8.0\javaee-api-8.0.jar;C:\Users\018039631\.m2\repository\com\sun\mail\javax.mail\1.6.0\javax.mail-1.6.0.jar;C:\Users\018039631\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-core\1.4.0\shiro-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-lang\1.4.0\shiro-lang-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-cache\1.4.0\shiro-cache-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-hash\1.4.0\shiro-crypto-hash-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-core\1.4.0\shiro-crypto-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-cipher\1.4.0\shiro-crypto-cipher-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-config-core\1.4.0\shiro-config-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-config-ogdl\1.4.0\shiro-config-ogdl-1.4.0.jar;C:\Users\018039631\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\018039631\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-event\1.4.0\shiro-event-1.4.0.jar;C:\Users\018039631\.m2\repository\org\slf4j\slf4j-simple\1.8.0-beta2\slf4j-simple-1.8.0-beta2.jar;C:\Users\018039631\.m2\repository\org\slf4j\slf4j-api\1.8.0-beta2\slf4j-api-1.8.0-beta2.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\junit\arquillian-junit-container\1.4.0.Final\arquillian-junit-container-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\junit\arquillian-junit-core\1.4.0.Final\arquillian-junit-core-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-api\1.4.0.Final\arquillian-test-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-api\1.4.0.Final\arquillian-core-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-spi\1.4.0.Final\arquillian-test-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-spi\1.4.0.Final\arquillian-core-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-api\1.4.0.Final\arquillian-container-test-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-api\1.2.6\shrinkwrap-api-1.2.6.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\descriptors\shrinkwrap-descriptors-api-base\2.0.0\shrinkwrap-descriptors-api-base-2.0.0.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-spi\1.4.0.Final\arquillian-container-test-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-impl-base\1.4.0.Final\arquillian-core-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-impl-base\1.4.0.Final\arquillian-test-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-impl-base\1.4.0.Final\arquillian-container-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-api\1.4.0.Final\arquillian-config-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-impl-base\1.4.0.Final\arquillian-config-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-spi\1.4.0.Final\arquillian-config-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\descriptors\shrinkwrap-descriptors-spi\2.0.0\shrinkwrap-descriptors-spi-2.0.0.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-impl-base\1.4.0.Final\arquillian-container-test-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-impl-base\1.2.6\shrinkwrap-impl-base-1.2.6.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-spi\1.2.6\shrinkwrap-spi-1.2.6.jar;C:\Users\018039631\.m2\repository\fish\payara\arquillian\arquillian-payara-server-4-embedded\1.0.Beta3\arquillian-payara-server-4-embedded-1.0.Beta3.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-spi\1.4.0.Final\arquillian-container-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\protocol\arquillian-protocol-servlet\1.4.0.Final\arquillian-protocol-servlet-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-cdi\1.4.0.Final\arquillian-testenricher-cdi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-ejb\1.4.0.Final\arquillian-testenricher-ejb-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-resource\1.4.0.Final\arquillian-testenricher-resource-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-initialcontext\1.4.0.Final\arquillian-testenricher-initialcontext-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\fish\payara\extras\payara-embedded-all\5.182\payara-embedded-all-5.182.jar;C:\Users\018039631\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\018039631\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\018039631\Desktop\Projetos Java\Estudos\Java EE\to-do\target\test-classes;C:\Users\018039631\Desktop\Projetos Java\Estudos\Java EE\to-do\target\classes;C:\Users\018039631\.m2\repository\org\eclipse\persistence\eclipselink\2.5.0\eclipselink-2.5.0.jar;C:\Users\018039631\.m2\repository\org\eclipse\persistence\javax.persistence\2.1.0\javax.persistence-2.1.0.jar;C:\Users\018039631\.m2\repository\org\eclipse\persistence\commonj.sdo\2.1.1\commonj.sdo-2.1.1.jar;C:\Users\018039631\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar;C:\Users\018039631\.m2\repository\javax\javaee-api\8.0\javaee-api-8.0.jar;C:\Users\018039631\.m2\repository\com\sun\mail\javax.mail\1.6.0\javax.mail-1.6.0.jar;C:\Users\018039631\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-core\1.4.0\shiro-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-lang\1.4.0\shiro-lang-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-cache\1.4.0\shiro-cache-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-hash\1.4.0\shiro-crypto-hash-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-core\1.4.0\shiro-crypto-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-crypto-cipher\1.4.0\shiro-crypto-cipher-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-config-core\1.4.0\shiro-config-core-1.4.0.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-config-ogdl\1.4.0\shiro-config-ogdl-1.4.0.jar;C:\Users\018039631\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\018039631\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\018039631\.m2\repository\org\apache\shiro\shiro-event\1.4.0\shiro-event-1.4.0.jar;C:\Users\018039631\.m2\repository\org\slf4j\slf4j-simple\1.8.0-beta2\slf4j-simple-1.8.0-beta2.jar;C:\Users\018039631\.m2\repository\org\slf4j\slf4j-api\1.8.0-beta2\slf4j-api-1.8.0-beta2.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\junit\arquillian-junit-container\1.4.0.Final\arquillian-junit-container-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\junit\arquillian-junit-core\1.4.0.Final\arquillian-junit-core-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-api\1.4.0.Final\arquillian-test-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-api\1.4.0.Final\arquillian-core-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-spi\1.4.0.Final\arquillian-test-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-spi\1.4.0.Final\arquillian-core-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-api\1.4.0.Final\arquillian-container-test-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-api\1.2.6\shrinkwrap-api-1.2.6.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\descriptors\shrinkwrap-descriptors-api-base\2.0.0\shrinkwrap-descriptors-api-base-2.0.0.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-spi\1.4.0.Final\arquillian-container-test-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\core\arquillian-core-impl-base\1.4.0.Final\arquillian-core-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\test\arquillian-test-impl-base\1.4.0.Final\arquillian-test-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-impl-base\1.4.0.Final\arquillian-container-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-api\1.4.0.Final\arquillian-config-api-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-impl-base\1.4.0.Final\arquillian-config-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\config\arquillian-config-spi\1.4.0.Final\arquillian-config-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\descriptors\shrinkwrap-descriptors-spi\2.0.0\shrinkwrap-descriptors-spi-2.0.0.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-test-impl-base\1.4.0.Final\arquillian-container-test-impl-base-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-impl-base\1.2.6\shrinkwrap-impl-base-1.2.6.jar;C:\Users\018039631\.m2\repository\org\jboss\shrinkwrap\shrinkwrap-spi\1.2.6\shrinkwrap-spi-1.2.6.jar;C:\Users\018039631\.m2\repository\fish\payara\arquillian\arquillian-payara-server-4-embedded\1.0.Beta3\arquillian-payara-server-4-embedded-1.0.Beta3.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\container\arquillian-container-spi\1.4.0.Final\arquillian-container-spi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\protocol\arquillian-protocol-servlet\1.4.0.Final\arquillian-protocol-servlet-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-cdi\1.4.0.Final\arquillian-testenricher-cdi-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-ejb\1.4.0.Final\arquillian-testenricher-ejb-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-resource\1.4.0.Final\arquillian-testenricher-resource-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\org\jboss\arquillian\testenricher\arquillian-testenricher-initialcontext\1.4.0.Final\arquillian-testenricher-initialcontext-1.4.0.Final.jar;C:\Users\018039631\.m2\repository\fish\payara\extras\payara-embedded-all\5.182\payara-embedded-all-5.182.jar;C:\Users\018039631\.m2\repository\io\jsonwebtoken\jjwt\0.9.0\jjwt-0.9.0.jar;C:\Users\018039631\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.9\jackson-databind-2.8.9.jar;C:\Users\018039631\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.8.0\jackson-annotations-2.8.0.jar;C:\Users\018039631\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.8.9\jackson-core-2.8.9.jar;C:\Users\018039631\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\018039631\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\018039631"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\018039~1\AppData\Local\Temp\surefire1308351117702236676\surefirebooter5289747211916340274.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\018039~1\AppData\Local\Temp\surefire11038778280979708308\surefirebooter11011492107311160901.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.4.1+1-LTS-2"/>
@@ -56,79 +56,79 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="learn.programming.service.TodoServiceTest" classname="learn.programming.service.TodoServiceTest" time="19.838">
+  <testcase name="learn.programming.service.TodoServiceTest" classname="learn.programming.service.TodoServiceTest" time="18.451">
     <error message="Could not start GlassFish Embedded" type="org.jboss.arquillian.container.spi.client.container.LifecycleException">org.jboss.arquillian.container.spi.client.container.LifecycleException: Could not start GlassFish Embedded
 Caused by: java.lang.RuntimeException: org.glassfish.embeddable.GlassFishException: Server failed to start
 Caused by: org.glassfish.embeddable.GlassFishException: Server failed to start
 </error>
-    <system-err><![CDATA[Oct 07, 2022 10:55:19 AM com.sun.enterprise.v3.server.CommonClassLoaderServiceImpl findDerbyClient
+    <system-err><![CDATA[Oct 10, 2022 11:54:02 AM com.sun.enterprise.v3.server.CommonClassLoaderServiceImpl findDerbyClient
 INFO: Cannot find javadb client jar file, derby jdbc driver will not be available by default.
-Oct 07, 2022 10:55:19 AM com.sun.enterprise.v3.server.CommonClassLoaderServiceImpl findH2Client
+Oct 10, 2022 11:54:02 AM com.sun.enterprise.v3.server.CommonClassLoaderServiceImpl findH2Client
 INFO: Cannot find h2db client jar file, h2 jdbc driver will not be available by default.
-Oct 07, 2022 10:55:24 AM org.hibernate.validator.internal.util.Version <clinit>
+Oct 10, 2022 11:54:07 AM org.hibernate.validator.internal.util.Version <clinit>
 INFO: HV000001: Hibernate Validator null
-Oct 07, 2022 10:55:26 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
-INFO: Network Listener http-listener started in: 75ms - bound to [/0.0.0.0:8181]
-Oct 07, 2022 10:55:26 AM org.glassfish.grizzly.http2.Http2AddOn setup
+Oct 10, 2022 11:54:08 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+INFO: Network Listener http-listener started in: 70ms - bound to [/0.0.0.0:8181]
+Oct 10, 2022 11:54:08 AM org.glassfish.grizzly.http2.Http2AddOn setup
 WARNING: TLS ALPN (Application-Layer Protocol Negotiation) support is not available. HTTP/2 support will not be enabled.
-Oct 07, 2022 10:55:26 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
-INFO: Network Listener https-listener started in: 3ms - bound to [/0.0.0.0:8182]
-Oct 07, 2022 10:55:26 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
-INFO: Network Listener admin-listener started in: 6ms - bound to [/0.0.0.0:4848]
-Oct 07, 2022 10:55:26 AM com.sun.enterprise.v3.services.impl.GrizzlyService postConstruct
-INFO: Grizzly 2.4.3 started in: 626ms - bound to [http-listener:8181, https-listener:8182, admin-listener:4848]
-Oct 07, 2022 10:55:26 AM com.hazelcast.instance.AddressPicker
+Oct 10, 2022 11:54:08 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+INFO: Network Listener https-listener started in: 6ms - bound to [/0.0.0.0:8182]
+Oct 10, 2022 11:54:08 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+INFO: Network Listener admin-listener started in: 4ms - bound to [/0.0.0.0:4848]
+Oct 10, 2022 11:54:08 AM com.sun.enterprise.v3.services.impl.GrizzlyService postConstruct
+INFO: Grizzly 2.4.3 started in: 575ms - bound to [http-listener:8181, https-listener:8182, admin-listener:4848]
+Oct 10, 2022 11:54:09 AM com.hazelcast.instance.AddressPicker
 INFO: [LOCAL] [development] [3.9.3] Using bind address: /192.168.0.18:4900
-Oct 07, 2022 10:55:26 AM com.hazelcast.instance.AddressPicker
+Oct 10, 2022 11:54:09 AM com.hazelcast.instance.AddressPicker
 INFO: [LOCAL] [development] [3.9.3] Using public address: /192.168.0.18:4900
-Oct 07, 2022 10:55:26 AM com.hazelcast.system
+Oct 10, 2022 11:54:09 AM com.hazelcast.system
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Hazelcast 3.9.3 (20180216 - 539b124) starting at [192.168.0.18]:4900
-Oct 07, 2022 10:55:26 AM com.hazelcast.system
+Oct 10, 2022 11:54:09 AM com.hazelcast.system
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Copyright (c) 2008-2018, Hazelcast, Inc. All Rights Reserved.
-Oct 07, 2022 10:55:26 AM com.hazelcast.system
+Oct 10, 2022 11:54:09 AM com.hazelcast.system
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Configured Hazelcast Serialization version: 1
-Oct 07, 2022 10:55:27 AM com.hazelcast.spi.impl.operationservice.impl.BackpressureRegulator
+Oct 10, 2022 11:54:09 AM com.hazelcast.spi.impl.operationservice.impl.BackpressureRegulator
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Backpressure is disabled
-Oct 07, 2022 10:55:27 AM com.hazelcast.instance.Node
+Oct 10, 2022 11:54:10 AM com.hazelcast.instance.Node
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Activating Discovery SPI Joiner
-Oct 07, 2022 10:55:28 AM com.hazelcast.spi.impl.operationexecutor.impl.OperationExecutorImpl
+Oct 10, 2022 11:54:10 AM com.hazelcast.spi.impl.operationexecutor.impl.OperationExecutorImpl
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
-Oct 07, 2022 10:55:28 AM com.hazelcast.internal.diagnostics.Diagnostics
+Oct 10, 2022 11:54:10 AM com.hazelcast.internal.diagnostics.Diagnostics
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
-Oct 07, 2022 10:55:28 AM com.hazelcast.core.LifecycleService
+Oct 10, 2022 11:54:10 AM com.hazelcast.core.LifecycleService
 INFO: [192.168.0.18]:4900 [development] [3.9.3] [192.168.0.18]:4900 is STARTING
-Oct 07, 2022 10:55:28 AM com.hazelcast.nio.tcp.TcpIpConnector
-INFO: [192.168.0.18]:4900 [development] [3.9.3] Connecting to /9.211.73.131:5900, timeout: 0, bind-any: true
-Oct 07, 2022 10:55:28 AM com.hazelcast.nio.tcp.TcpIpConnector
+Oct 10, 2022 11:54:10 AM com.hazelcast.nio.tcp.TcpIpConnector
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Connecting to /192.168.0.18:5900, timeout: 0, bind-any: true
-Oct 07, 2022 10:55:30 AM com.hazelcast.nio.tcp.TcpIpConnector
+Oct 10, 2022 11:54:10 AM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [192.168.0.18]:4900 [development] [3.9.3] Connecting to /9.211.77.178:5900, timeout: 0, bind-any: true
+Oct 10, 2022 11:54:12 AM com.hazelcast.nio.tcp.TcpIpConnector
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Could not connect to: /192.168.0.18:5900. Reason: SocketException[Connection refused: connect to address /192.168.0.18:5900]
-Oct 07, 2022 10:55:30 AM com.hazelcast.nio.tcp.TcpIpConnector
-INFO: [192.168.0.18]:4900 [development] [3.9.3] Could not connect to: /9.211.73.131:5900. Reason: SocketException[Connection refused: connect to address /9.211.73.131:5900]
-Oct 07, 2022 10:55:30 AM com.hazelcast.internal.cluster.impl.DiscoveryJoiner
+Oct 10, 2022 11:54:12 AM com.hazelcast.nio.tcp.TcpIpConnector
+INFO: [192.168.0.18]:4900 [development] [3.9.3] Could not connect to: /9.211.77.178:5900. Reason: SocketException[Connection refused: connect to address /9.211.77.178:5900]
+Oct 10, 2022 11:54:12 AM com.hazelcast.internal.cluster.impl.DiscoveryJoiner
 INFO: [192.168.0.18]:4900 [development] [3.9.3] [192.168.0.18]:5900 is added to the blacklist.
-Oct 07, 2022 10:55:30 AM com.hazelcast.internal.cluster.impl.DiscoveryJoiner
-INFO: [192.168.0.18]:4900 [development] [3.9.3] [9.211.73.131]:5900 is added to the blacklist.
-Oct 07, 2022 10:55:31 AM com.hazelcast.system
+Oct 10, 2022 11:54:12 AM com.hazelcast.internal.cluster.impl.DiscoveryJoiner
+INFO: [192.168.0.18]:4900 [development] [3.9.3] [9.211.77.178]:5900 is added to the blacklist.
+Oct 10, 2022 11:54:13 AM com.hazelcast.system
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Cluster version set to 3.9
-Oct 07, 2022 10:55:31 AM com.hazelcast.internal.cluster.ClusterService
+Oct 10, 2022 11:54:13 AM com.hazelcast.internal.cluster.ClusterService
 INFO: [192.168.0.18]:4900 [development] [3.9.3] 
 
 Members {size:1, ver:1} [
-	Member [192.168.0.18]:4900 - 5e26225d-c7d5-4b16-a543-fd4766fa83f2 this
+	Member [192.168.0.18]:4900 - 7e577260-1ace-4f34-9799-ec833bd53ded this
 ]
 
-Oct 07, 2022 10:55:31 AM com.hazelcast.internal.jmx.ManagementService
+Oct 10, 2022 11:54:13 AM com.hazelcast.internal.jmx.ManagementService
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Hazelcast JMX agent enabled.
-Oct 07, 2022 10:55:31 AM com.hazelcast.core.LifecycleService
+Oct 10, 2022 11:54:13 AM com.hazelcast.core.LifecycleService
 INFO: [192.168.0.18]:4900 [development] [3.9.3] [192.168.0.18]:4900 is STARTED
-Oct 07, 2022 10:55:31 AM fish.payara.nucleus.hazelcast.HazelcastCore bindToJNDI
+Oct 10, 2022 11:54:13 AM fish.payara.nucleus.hazelcast.HazelcastCore bindToJNDI
 INFO: Hazelcast Instance Bound to JNDI at payara/Hazelcast
-Oct 07, 2022 10:55:31 AM fish.payara.nucleus.hazelcast.HazelcastCore bindToJNDI
+Oct 10, 2022 11:54:13 AM fish.payara.nucleus.hazelcast.HazelcastCore bindToJNDI
 INFO: JSR107 Caching Provider Bound to JNDI at payara/CachingProvider
-Oct 07, 2022 10:55:31 AM fish.payara.nucleus.hazelcast.HazelcastCore bindToJNDI
+Oct 10, 2022 11:54:13 AM fish.payara.nucleus.hazelcast.HazelcastCore bindToJNDI
 INFO: JSR107 Default Cache Manager Bound to JNDI at payara/CacheManager
-Oct 07, 2022 10:55:32 AM com.sun.xml.bind.v2.runtime.reflect.opt.Injector <clinit>
+Oct 10, 2022 11:54:13 AM com.sun.xml.bind.v2.runtime.reflect.opt.Injector <clinit>
 SEVERE: null
 java.security.PrivilegedActionException: java.lang.NoSuchMethodException: sun.misc.Unsafe.defineClass(java.lang.String,[B,int,int,java.lang.ClassLoader,java.security.ProtectionDomain)
 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:573)
@@ -276,7 +276,7 @@ Caused by: java.lang.NoSuchMethodException: sun.misc.Unsafe.defineClass(java.lan
 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
 	... 137 more
 
-Oct 07, 2022 10:55:32 AM com.sun.enterprise.v3.server.AppServerStartup$MasterRunLevelListener onError
+Oct 10, 2022 11:54:13 AM com.sun.enterprise.v3.server.AppServerStartup$MasterRunLevelListener onError
 INFO: Shutdown requested
 MultiException stack 1 of 2
 java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null
@@ -508,7 +508,7 @@ java.lang.IllegalStateException: Unable to perform operation: post construct on 
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
 
-Oct 07, 2022 10:55:32 AM com.sun.enterprise.v3.server.AppServerStartup$MasterRunLevelListener onError
+Oct 10, 2022 11:54:13 AM com.sun.enterprise.v3.server.AppServerStartup$MasterRunLevelListener onError
 SEVERE: Startup service failed to start
 MultiException stack 1 of 2
 java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null
@@ -740,35 +740,35 @@ java.lang.IllegalStateException: Unable to perform operation: post construct on 
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
 
-Oct 07, 2022 10:55:32 AM fish.payara.nucleus.notification.NotificationEventBus unregister
-WARNING: Tried to unregisterfish.payara.notification.eventbus.core.CDIEventbusNotifierService@1dc2c13c, it may not have been previously registered
-Oct 07, 2022 10:55:32 AM fish.payara.nucleus.notification.NotificationEventBus unregister
-WARNING: Tried to unregisterfish.payara.nucleus.notification.log.LogNotifierService@19bbb216, it may not have been previously registered
-Oct 07, 2022 10:55:32 AM fish.payara.nucleus.notification.NotificationEventBus unregister
-WARNING: Tried to unregisterfish.payara.notification.eventbus.core.EventbusNotifierService@6cfac0bd, it may not have been previously registered
-Oct 07, 2022 10:55:32 AM fish.payara.nucleus.hazelcast.HazelcastCore unbindFromJNDI
-INFO: Hazelcast Instance Unbound from JNDI at payara/Hazelcast
-Oct 07, 2022 10:55:32 AM fish.payara.nucleus.hazelcast.HazelcastCore unbindFromJNDI
-INFO: JSR107 Caching Provider Unbound from JNDI at payara/CachingProvider
-Oct 07, 2022 10:55:32 AM fish.payara.nucleus.hazelcast.HazelcastCore unbindFromJNDI
-INFO: JSR107 Cache Manager Unbound from JNDI at payara/CacheManager
-Oct 07, 2022 10:55:32 AM com.hazelcast.core.LifecycleService
-INFO: [192.168.0.18]:4900 [development] [3.9.3] [192.168.0.18]:4900 is SHUTTING_DOWN
-Oct 07, 2022 10:55:32 AM com.sun.enterprise.v3.admin.StopServer doExecute
+Oct 10, 2022 11:54:13 AM fish.payara.nucleus.notification.NotificationEventBus unregister
+WARNING: Tried to unregisterfish.payara.notification.eventbus.core.CDIEventbusNotifierService@7b38db21, it may not have been previously registered
+Oct 10, 2022 11:54:13 AM fish.payara.nucleus.notification.NotificationEventBus unregister
+WARNING: Tried to unregisterfish.payara.nucleus.notification.log.LogNotifierService@2b9615cb, it may not have been previously registered
+Oct 10, 2022 11:54:13 AM fish.payara.nucleus.notification.NotificationEventBus unregister
+WARNING: Tried to unregisterfish.payara.notification.eventbus.core.EventbusNotifierService@1aea759d, it may not have been previously registered
+Oct 10, 2022 11:54:14 AM com.sun.enterprise.v3.admin.StopServer doExecute
 INFO: Server shutdown initiated
-Oct 07, 2022 10:55:32 AM com.hazelcast.instance.Node
+Oct 10, 2022 11:54:14 AM fish.payara.nucleus.hazelcast.HazelcastCore unbindFromJNDI
+INFO: Hazelcast Instance Unbound from JNDI at payara/Hazelcast
+Oct 10, 2022 11:54:14 AM fish.payara.nucleus.hazelcast.HazelcastCore unbindFromJNDI
+INFO: JSR107 Caching Provider Unbound from JNDI at payara/CachingProvider
+Oct 10, 2022 11:54:14 AM fish.payara.nucleus.hazelcast.HazelcastCore unbindFromJNDI
+INFO: JSR107 Cache Manager Unbound from JNDI at payara/CacheManager
+Oct 10, 2022 11:54:14 AM com.hazelcast.core.LifecycleService
+INFO: [192.168.0.18]:4900 [development] [3.9.3] [192.168.0.18]:4900 is SHUTTING_DOWN
+Oct 10, 2022 11:54:14 AM com.hazelcast.instance.Node
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Shutting down connection manager...
-Oct 07, 2022 10:55:32 AM com.hazelcast.instance.Node
+Oct 10, 2022 11:54:14 AM com.hazelcast.instance.Node
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Shutting down node engine...
-Oct 07, 2022 10:55:32 AM com.hazelcast.instance.NodeExtension
+Oct 10, 2022 11:54:14 AM com.hazelcast.instance.NodeExtension
 INFO: [192.168.0.18]:4900 [development] [3.9.3] Destroying node NodeExtension.
-Oct 07, 2022 10:55:32 AM com.hazelcast.instance.Node
-INFO: [192.168.0.18]:4900 [development] [3.9.3] Hazelcast Shutdown is completed in 84 ms.
-Oct 07, 2022 10:55:32 AM com.hazelcast.core.LifecycleService
+Oct 10, 2022 11:54:14 AM com.hazelcast.instance.Node
+INFO: [192.168.0.18]:4900 [development] [3.9.3] Hazelcast Shutdown is completed in 8 ms.
+Oct 10, 2022 11:54:14 AM com.hazelcast.core.LifecycleService
 INFO: [192.168.0.18]:4900 [development] [3.9.3] [192.168.0.18]:4900 is SHUTDOWN
-Oct 07, 2022 10:55:32 AM fish.payara.nucleus.hazelcast.HazelcastCore shutdownHazelcast
+Oct 10, 2022 11:54:14 AM fish.payara.nucleus.hazelcast.HazelcastCore shutdownHazelcast
 INFO: Shutdown Hazelcast
-Oct 07, 2022 10:55:32 AM com.sun.enterprise.v3.server.AppServerStartup proceedTo
+Oct 10, 2022 11:54:14 AM com.sun.enterprise.v3.server.AppServerStartup proceedTo
 SEVERE: Shutdown required
 MultiException stack 1 of 1
 MultiException stack 1 of 2
@@ -1001,8 +1001,10 @@ java.lang.IllegalStateException: Unable to perform operation: post construct on 
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
 
-Oct 07, 2022 10:55:32 AM com.sun.enterprise.v3.server.AppServerStartup doStart
+Oct 10, 2022 11:54:14 AM com.sun.enterprise.v3.server.AppServerStartup doStart
 SEVERE: Failed to start, exiting
+Oct 10, 2022 11:54:14 AM com.sun.enterprise.v3.admin.StopServer doExecute
+INFO: Server shutdown initiated
 ]]></system-err>
   </testcase>
 </testsuite>

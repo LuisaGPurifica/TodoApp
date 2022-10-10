@@ -1,9 +1,14 @@
+learn\programming\rest\Authz.class
 learn\programming\service\SecurityUtil.class
 learn\programming\entity\AbstractEntity.class
 learn\programming\rest\TodoConfig.class
+learn\programming\rest\SecurityFilter$1$1.class
 learn\programming\service\QueryService.class
+learn\programming\entity\Todo.class
+learn\programming\rest\UserRest.class
+learn\programming\rest\SecurityFilter.class
+learn\programming\rest\SecurityFilter$1.class
 learn\programming\entity\User.class
 learn\programming\service\CDIProducer.class
 learn\programming\service\TodoService.class
-learn\programming\entity\Todo.class
 learn\programming\rest\TodoRest.class
